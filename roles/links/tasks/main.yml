@@ -1,0 +1,10 @@
+---
+  - name: Adding key to jenkins
+    apt_key: url=http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key state=present
+
+  - name: Adding repository for Jenkins
+    apt_repository: repo='deb http://pkg.jenkins-ci.org/debian binary/'
+
+ # - name: Intialising the file
+  #  init_file: /etc/apt/sources.list.d/jenkins.list
+

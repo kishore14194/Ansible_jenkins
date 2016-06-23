@@ -1,0 +1,11 @@
+---
+- hosts: all
+
+ # remote_user: root
+
+  roles:
+  - role: links
+
+  tasks:
+  - name: Install jenkins in ubuntu
+    apt: pkg=jenkins state=latest
