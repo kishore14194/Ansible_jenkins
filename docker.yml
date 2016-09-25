@@ -1,0 +1,6 @@
+---
+- hosts: deploy
+
+  roles:
+  - role: docker
+
